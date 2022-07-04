@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="container">
       <div className="introduction__display">
-        <span className='introduction__text-typing'>Hi, <span className='introduction__name-typing'>ophelie</span> here. </span>
+        <div className='introduction__text-typing'>
+          Hi,<span className='introduction__name-typing'>ophelie</span> here.
+        </div>
         <span className='introduction__random-text'>Je crée des choses parfois.</span>
         <p>Je suis une front-end developer residant en Ile-de-France.
           <br />
