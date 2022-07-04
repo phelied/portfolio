@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
 :root {
-    --text-color: #FFFFFF;
-    --text-color-alt: #a8a2a2;
-    --background-color: #16215b;
+  --text-color: #bcbfe1;
+  --text-color-alt: #f25525;
+  --background-color: #16215b;
 }
 
 * {
@@ -18,5 +18,66 @@ html {
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.introduction__display {
+  text-align: center;
+}
+
+.introduction__display p {
+  width: 300px;
+} 
+
+.introduction__text-typing {
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  /*font-family: monospace;*/
+  font-size: 46px;
+
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.introduction__display span:last-child {
+  color: var(--text-color-alt);
+}
+
+.introduction__display p {
+  margin: 20px;
+}
+
+.introduction__random-text {
+  display: block;
+  font-size: 24px;
+  margin: 10épx;
+}
+
+.introduction__mail-display {
+  border: 2px var(--text-color-alt) solid;
+  color: var(--text-color-alt);
+  width: 7em;
   margin: 0 auto;
+  padding: 0.5em 0;
+  border-radius: 5px;
+}
+
+.introduction__mail-display svg{
+  color: var(--text-color-alt);
+  margin-right: 9px;
 }
