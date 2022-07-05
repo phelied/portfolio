@@ -22,6 +22,7 @@ html {
   align-items: center;
   justify-content: center;
   margin: 30px auto;
+  flex-direction: column;
 }
 
 .introduction__display {
@@ -54,7 +55,7 @@ html {
   }
 }
 
-.introduction__display span:last-child {
+.secondary-color-text {
   color: var(--text-color-alt);
 }
 
