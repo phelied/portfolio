@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
 :root {
   --text-color: #bcbfe1;
-  --text-color-alt: #f25525;
-  --background-color: #16215b;
+  --text-color-alt: #5ecb48;
+  --background-color: #09061a;
+  --tertiary-color: #fff;
 }
 
 * {
@@ -17,9 +18,13 @@ html {
   background-color: var(--background-color);
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   align-items: center;
-  margin: 30px 1.5em;
+  margin: 4rem 1.5em;
   flex-direction: column;
 }
 
@@ -32,30 +37,38 @@ html {
 }
 
 .introduction__text-typing {
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid var(--text-color-alt);
-  font-family: monospace;
-  font-size: 38px;
+  display: inline-block;
 }
 
+.introduction__typed-out {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  animation: typing 1s steps(20, end) forwards, blinking 0.9s infinite;
+  font-size: 2.5rem;
+  width: 0;
+}
 @keyframes typing {
   from {
     width: 0;
   }
+  to {
+    width: 100%;
+  }
 }
-
-@keyframes blink {
-  50% {
+@keyframes blinking {
+  from {
     border-color: transparent;
+  }
+  to {
+    border-color: orange;
   }
 }
 
 .secondary-color-text {
   color: var(--text-color-alt);
+  font-weight: 600;
 }
-
 
 .introduction__random-text {
   display: block;
@@ -76,25 +89,25 @@ html {
   color: var(--text-color-alt);
   margin-right: 9px;
 }
-
-.about__display {
-  margin: 2em auto;
+.introduction__mail-display a {
+  width: 100%;
 }
 
-.about__display p {
+.about__display,
+.MuiBox-root,
+.display-p {
   margin: 2em auto;
 }
 
 .tertiary-color-text {
   font-size: 30px;
-  color: white;
+  color: var(--tertiary-color);
   margin-bottom: 2em;
   font-family: monospace;
   text-align: right;
 }
 
 .about__language-display {
-
   margin: 1em auto;
   width: 100%;
   display: flex;
@@ -112,6 +125,3 @@ html {
   margin-right: 1em;
 }
 
-.experience__display {
-  margin: 2em auto;
-}
