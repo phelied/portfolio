@@ -95,7 +95,8 @@ a {
 
 .about__display,
 .MuiBox-root,
-.display-p {
+.display-p,
+.awssld--organic-arrows {
   margin: 2em auto;
 }
 
@@ -125,3 +126,6 @@ a {
   margin-right: 1em;
 }
 
+.software__display > .awssld {
+  display: none;
+}

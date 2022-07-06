@@ -3,8 +3,36 @@ import FullWidthTabs from './components/experience'
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
+import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 
 function App() {
+
+  const software = [
+    {
+      'github': '',
+      'link': '',
+      'title': '',
+      'description': '',
+      'language': '',
+    },
+    {
+      'github': '',
+      'link': '',
+      'title': '',
+      'description': '',
+      'language': '',
+    },
+    {
+      'github': '',
+      'link': '',
+      'title': '',
+      'description': '',
+      'language': '',
+    }
+
+  ]
 
   return (
     <div className="container">
@@ -41,6 +69,16 @@ function App() {
       <div id="experience" className="experience__display">
         <span className='tertiary-color-text'>/ experience</span>
         <FullWidthTabs />
+      </div>
+      <div id="software" className="software__display">
+        <span className='tertiary-color-text'>/ software-creations</span>
+        <AwesomeSlider animation="cubeAnimation">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+        </AwesomeSlider>
+
       </div>
     </div>
   );

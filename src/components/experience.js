@@ -80,7 +80,7 @@ export default function FullWidthTabs() {
             >
                 <TabPanel value={value} index={0} dir={theme.direction}>
                     <div className='experience__job'>
-                        <span>Front-end Developer @ <span className='secondary-color-text'>Ubisoft</span></span>
+                        <span>Front-end Developer Assitant @ <span className='secondary-color-text'>Ubisoft</span></span>
                         <span>NOV 2021 - AUJOURD'HUI</span>
                     </div>
                     <div>
