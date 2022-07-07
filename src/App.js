@@ -12,21 +12,21 @@ function App() {
   const software = [
     {
       'github': '',
-      'link': '',
+      'linkWeb': '',
       'title': '',
       'description': '',
       'language': '',
     },
     {
       'github': '',
-      'link': '',
+      'linkWeb': '',
       'title': '',
       'description': '',
       'language': '',
     },
     {
       'github': '',
-      'link': '',
+      'linkWeb': '',
       'title': '',
       'description': '',
       'language': '',
