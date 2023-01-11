@@ -29,7 +29,7 @@ a {
 
 .container {
   align-items: center;
-  margin: 4rem 1.5em;
+  margin: 4rem 2rem 1.5em;
   flex-direction: column;
 }
 
@@ -202,7 +202,7 @@ span.css-11yukd5-MuiTabs-indicator {
   justify-content: space-between;
 }
 
-.software__display-project-nav svg {
+.software__display-project-nav svg, .footer__links svg {
   width: 30px;
   height: 30px;
 }
@@ -228,4 +228,31 @@ span.css-11yukd5-MuiTabs-indicator {
 .software__display-project-margin {
   padding: 2em auto;
   margin: 1em 12px;
+}
+
+.software__project-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0.5em 0;
+  color: var(--alt-color);
+}
+
+.footer__display {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.footer__links svg{
+  display: flex;
+  justify-content: center;
+  margin:  0 .5em;
+
 }
