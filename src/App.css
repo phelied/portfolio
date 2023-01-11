@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
 :root {
-  --text-color: #bcbfe1;
-  --text-color-alt: #5ecb48;
-  --background-color: #09061a;
-  --tertiary-color: #fff;
+  --text-color: #214842;
+  --text-color-alt:  #258F67;
+  --background-color: #F5F3E8;
+  --tertiary-color:  #EFC368;
+  --alt-color:   #9EBCA6;
 }
 
 * {
@@ -12,6 +13,10 @@
   box-sizing: border-box;
   font-family: "Chakra Petch";
   color: var(--text-color);
+}
+
+.alt-color{
+  color: var(--alt-color);
 }
 
 html {
@@ -128,4 +133,51 @@ a {
 
 .software__display > .awssld {
   display: none;
+}
+
+.experience__display > .css-1izfg5m {
+  width: fit-content;
+  background-color: var(--background-color);
+}
+
+.MuiBox-root > .css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  background-color: var(--background-color);
+}
+
+span.css-11yukd5-MuiTabs-indicator {
+  background-color: var(--text-color-alt);
+}
+
+.experience__job {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-experience__job {
+  margin: 2em auto;
+}
+
+.experience__job-accomplishment {
+  display: flex;
+}
+
+.experience__job-accomplishment p {
+  margin-left: 1rem;
+}
+
+.experience__job-items {
+  margin-top: 1em;
+}
+
+.experience__job span:first-of-type {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.experience__job span:first-of-type .secondary-color-text {
+  font-size: 18px;
+}
+
+.experience__job span:last-of-type {
+  font-size: 13px;
 }
