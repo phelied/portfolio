@@ -3,29 +3,25 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faCaretRight, faFolder, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import weathy from './images/Weathy-screen.png';
 function App() {
 
-  const data = [
+  const projects = [
     {
       title: 'Weathy',
       description: 'Weathy is a weather app that allows you to check the weather in your city and in the cities of your choice. It also allows you to save your favorite cities and to see the weather forecast for the next 5 days.',
-      image: 'https://i.ibb.co/0nZ3Z3T/weathy.png',
       link: 'https://weathy.netlify.app/',
       github: ''
     },
     {
       title: 'portfolio',
-      description: 'Weathy is a weather app that allows you to check the weather in your city and in the cities of your choice. It also allows you to save your favorite cities and to see the weather forecast for the next 5 days.',
-      image: './images/Weathy-screen.png',
-      link: 'https://weathy.netlify.app/',
+      description: '    Discover my unique talents and experiences through my curated portfolio, showcasing my best work and achievements in an engaging way.',
+      link: '',
       github: ''
     },
     {
       title: 'my auto',
       description: 'Weathy is a weather app that allows you to check the weather in your city and in the cities of your choice. It also allows you to save your favorite cities and to see the weather forecast for the next 5 days.',
-      image: 'https://i.ibb.co/0nZ3Z3T/weathy.png',
-      link: 'https://weathy.netlify.app/',
+      link: '',
       github: ''
     },
   ]
@@ -101,14 +97,17 @@ function App() {
       <div id="software" className="software__display">
         <span className='tertiary-color-text'>/ software-creations</span>
         <div className='software__display-projects block-experience__job'>
-          {data.map((project) => (
+          {projects.map((project) => (
             <div key={project.title} className='software__display-project'>
               <div className='software__display-project-margin'>
                 <div className='software__display-project-nav'>
                   <FontAwesomeIcon icon={faFolder} />
                   <div className='software__display-project-links'>
                     <FontAwesomeIcon icon={faGithub} />
-                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    {project.link !== "" && <a href={project.link}>
+                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </a>
+                    }
                   </div>
                 </div>
                 <div className='software__display-project-info'>
@@ -122,7 +121,12 @@ function App() {
         </div>
       </div>
       <footer className="footer__display">
-        <div className='footer__display-links'>
+        <span>Built and designed by Ophelie Diomar.</span>
+        <span>All rights reserved. ©</span>
+        <div className='footer__links'>
+          <a href="mailto: opheliediomar@outlook.fr" >
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
           <a href="https://www.linkedin.com/in/ophelie-diomar-2b1b1b1b1/">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
