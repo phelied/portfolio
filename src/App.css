@@ -99,10 +99,9 @@ a {
 }
 
 .about__display,
-.MuiBox-root,
 .display-p,
 .awssld--organic-arrows {
-  margin: 2em auto;
+  margin: 2em 0 auto;
 }
 
 .tertiary-color-text {
@@ -188,12 +187,12 @@ span.css-11yukd5-MuiTabs-indicator {
 
 .software__display-projects {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .software__display-project {
   border: 4px solid var(--alt-color);
-  margin: 20px 0;
+  margin-bottom: 20px;
   border-radius: 8px;
 }
 
@@ -202,7 +201,8 @@ span.css-11yukd5-MuiTabs-indicator {
   justify-content: space-between;
 }
 
-.software__display-project-nav svg, .footer__links svg {
+.software__display-project-nav svg,
+.footer__links svg {
   width: 30px;
   height: 30px;
 }
@@ -250,9 +250,24 @@ span.css-11yukd5-MuiTabs-indicator {
   margin: 1em 0;
 }
 
-.footer__links svg{
+.footer__links svg {
   display: flex;
   justify-content: center;
-  margin:  0 .5em;
+  margin: 0 0.5em;
+}
 
+@media only screen and (min-width: 520px) {
+  .software__display-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .software__display-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+  }
 }

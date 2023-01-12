@@ -10,19 +10,25 @@ function App() {
       title: 'Weathy',
       description: 'Weathy is a weather app that allows you to check the weather in your city and in the cities of your choice. It also allows you to save your favorite cities and to see the weather forecast for the next 5 days.',
       link: 'https://weathy.netlify.app/',
-      github: ''
+      github: 'https://github.com/phelied/weathy'
     },
     {
-      title: 'portfolio',
-      description: '    Discover my unique talents and experiences through my curated portfolio, showcasing my best work and achievements in an engaging way.',
+      title: 'Portfolio',
+      description: 'Discover my unique talents and experiences through my curated portfolio, showcasing my best work and achievements in an engaging way.',
+      link: '',
+      github: 'https://github.com/phelied/portfolio'
+    },
+    {
+      title: 'My auto',
+      description: 'An online driving school platform that allows users to book driving lessons with an instructor, view completed hours, and schedule additional hours.',
       link: '',
       github: ''
     },
     {
-      title: 'my auto',
-      description: 'Weathy is a weather app that allows you to check the weather in your city and in the cities of your choice. It also allows you to save your favorite cities and to see the weather forecast for the next 5 days.',
+      title: 'E-commerce',
+      description: 'a replica of the popular social media platform Twitter. Users can create an account, post tweets, follow other users, and view a timeline of tweets from the people they follow.',
       link: '',
-      github: ''
+      github: 'https://github.com/phelied/E-commerce'
     },
   ]
 
@@ -39,7 +45,11 @@ function App() {
           <br />
           I have a passion for designing and developing web and game applications.
         </p>
-        <div className='introduction__mail-display'><a href="mailto: opheliediomar@outlook.fr" ><FontAwesomeIcon icon={faEnvelope} />Say hi!</a></div>
+        <div className='introduction__mail-display'>
+          <a href="mailto: opheliediomar@outlook.fr">
+            <FontAwesomeIcon icon={faEnvelope} />Say hi!
+          </a>
+        </div>
       </div>
       <div id="about" className="about__display">
         <span className='tertiary-color-text'>/ about me</span>
@@ -50,18 +60,17 @@ function App() {
           I'm a <span className='secondary-color-text'> quick learner</span>, <span className='secondary-color-text'>a team player</span>, and I always strive to create elegant, efficient
           and robust code. I'm eager to bring my skills and experience to a new challenge and am
           excited to continue developing my skills in a dynamic and fast-paced work environment.
-          <br />
-          <br />
-          Here are some of the programming languages that I have worked with:
-          <div className='about__language-display'>
-            <span><FontAwesomeIcon icon={faCaretRight} />React.js</span>
-            <span><FontAwesomeIcon icon={faCaretRight} />HTML & CSS</span>
-            <span><FontAwesomeIcon icon={faCaretRight} />Node.js</span>
-            <span><FontAwesomeIcon icon={faCaretRight} />Typescript</span>
-            <span><FontAwesomeIcon icon={faCaretRight} />PHP</span>
-            <span><FontAwesomeIcon icon={faCaretRight} />Symfony</span>
-          </div>
         </p>
+        <br />
+        Here are some of the programming languages that I have worked with:
+        <div className='about__language-display'>
+          <span><FontAwesomeIcon icon={faCaretRight} />React.js</span>
+          <span><FontAwesomeIcon icon={faCaretRight} />HTML & CSS</span>
+          <span><FontAwesomeIcon icon={faCaretRight} />Node.js</span>
+          <span><FontAwesomeIcon icon={faCaretRight} />Typescript</span>
+          <span><FontAwesomeIcon icon={faCaretRight} />PHP</span>
+          <span><FontAwesomeIcon icon={faCaretRight} />Symfony</span>
+        </div>
       </div>
       <div id="experience" className="experience__display">
         <span className='tertiary-color-text'>/ experience</span>
@@ -103,9 +112,12 @@ function App() {
                 <div className='software__display-project-nav'>
                   <FontAwesomeIcon icon={faFolder} />
                   <div className='software__display-project-links'>
-                    <FontAwesomeIcon icon={faGithub} />
                     {project.link !== "" && <a href={project.link}>
                       <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </a>
+                    }
+                    {project.github !== "" && <a href={project.github}>
+                      <FontAwesomeIcon icon={faGithub} />
                     </a>
                     }
                   </div>
