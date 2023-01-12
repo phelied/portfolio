@@ -9,7 +9,7 @@ function App() {
     {
       title: 'Weathy',
       description: 'Weathy is a weather app that allows you to check the weather in your city and in the cities of your choice. It also allows you to save your favorite cities and to see the weather forecast for the next 5 days.',
-      link: 'https://weathy.netlify.app/',
+      link: '',
       github: 'https://github.com/phelied/weathy'
     },
     {
