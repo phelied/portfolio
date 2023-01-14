@@ -26,7 +26,7 @@ function App() {
     },
     {
       title: 'E-commerce',
-      description: 'a replica of the popular social media platform Twitter. Users can create an account, post tweets, follow other users, and view a timeline of tweets from the people they follow.',
+      description: 'A replica of the popular social media platform Twitter. Users can create an account, post tweets, follow other users, and view a timeline of tweets from the people they follow.',
       link: '',
       github: 'https://github.com/phelied/E-commerce'
     },

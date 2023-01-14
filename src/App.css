@@ -130,23 +130,6 @@ a {
   margin-right: 1em;
 }
 
-.software__display > .awssld {
-  display: none;
-}
-
-.experience__display > .css-1izfg5m {
-  width: fit-content;
-  background-color: var(--background-color);
-}
-
-.MuiBox-root > .css-hip9hq-MuiPaper-root-MuiAppBar-root {
-  background-color: var(--background-color);
-}
-
-span.css-11yukd5-MuiTabs-indicator {
-  background-color: var(--text-color-alt);
-}
-
 .experience__job {
   display: flex;
   flex-direction: column;
@@ -213,16 +196,6 @@ span.css-11yukd5-MuiTabs-indicator {
 .software__display-project-info {
   display: flex;
   flex-direction: column;
-}
-
-.software__display-project-img img {
-  width: 80%;
-  height: 100px;
-}
-
-.software__display-project-img {
-  display: flex;
-  justify-content: center;
 }
 
 .software__display-project-margin {
