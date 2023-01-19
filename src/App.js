@@ -15,7 +15,7 @@ function App() {
     {
       title: 'Portfolio',
       description: 'Discover my unique talents and experiences through my curated portfolio, showcasing my best work and achievements in an engaging way.',
-      link: '',
+      link: 'https://phelied.netlify.app',
       github: 'https://github.com/phelied/portfolio'
     },
     {
