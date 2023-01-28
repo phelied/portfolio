@@ -1,36 +1,11 @@
 import './App.css';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faCaretRight, faFolder, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-function App() {
+import { faEnvelope, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Projects from './components/projects';
 
-  const projects = [
-    {
-      title: 'Weathy',
-      description: 'Weathy is a weather app that allows you to check the weather in your city and in the cities of your choice. It also allows you to save your favorite cities and to see the weather forecast for the next 5 days.',
-      link: '',
-      github: 'https://github.com/phelied/weathy'
-    },
-    {
-      title: 'Portfolio',
-      description: 'Discover my unique talents and experiences through my curated portfolio, showcasing my best work and achievements in an engaging way.',
-      link: 'https://phelied.netlify.app',
-      github: 'https://github.com/phelied/portfolio'
-    },
-    {
-      title: 'My auto',
-      description: 'An online driving school platform that allows users to book driving lessons with an instructor, view completed hours, and schedule additional hours.',
-      link: '',
-      github: ''
-    },
-    {
-      title: 'E-Commerce',
-      description: 'Developed an e-commerce project that provides an intuitive user experience and professional product presentation. It features capabilities such as product search, customer reviews, delivery options and a secure online payment system.',
-      link: '',
-      github: 'https://github.com/phelied/E-commerce'
-    },
-  ]
+function App() {
 
   return (
     <div className="container">
@@ -103,35 +78,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div id="software" className="software__display">
-        <span className='tertiary-color-text'>/ software-creations</span>
-        <div className='software__display-projects block-experience__job'>
-          {projects.map((project) => (
-            <div key={project.title} className='software__display-project'>
-              <div className='software__display-project-margin'>
-                <div className='software__display-project-nav'>
-                  <FontAwesomeIcon icon={faFolder} />
-                  <div className='software__display-project-links'>
-                    {project.link !== "" && <a href={project.link}>
-                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                    </a>
-                    }
-                    {project.github !== "" && <a href={project.github}>
-                      <FontAwesomeIcon icon={faGithub} />
-                    </a>
-                    }
-                  </div>
-                </div>
-                <div className='software__display-project-info'>
-                  <span className='software__project-title'>{project.title}</span>
-                  <p className='software__project-description'>{project.description}</p>
-                  <span className='software__project-techno'></span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <Projects />
       <footer className="footer__display">
         <span>Built and designed by Ophelie Diomar.</span>
         <span>All rights reserved. ©</span>

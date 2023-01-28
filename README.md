@@ -16,9 +16,9 @@
     Discover my unique talents and experiences through my curated portfolio, showcasing my best work and achievements in an engaging way.
     <br />
     <br />
-    <a href="#">View Demo (Soon) </a>
+    <a href="https://phelied.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/phelied/weathy/issues">Report Bug</a>
+    <a href="https://github.com/phelied/portfolio/issues">Report Bug</a>
     ·
   </p>
 </div>
@@ -113,7 +113,7 @@ Here is a list resources I find helpful and would like to give credit to.
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/phelied/weathy/blob/main/LICENSE.txt
+[license-url]: https://github.com/phelied/portfolio/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/ophelie-diomar-680162209/
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
